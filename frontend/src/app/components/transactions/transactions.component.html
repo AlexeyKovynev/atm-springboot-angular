@@ -1,0 +1,31 @@
+<div class="transactions-container">
+  
+  <!--SCREEN-->
+  <div class="transactions-content">
+    <div class="screen-and-buttons">
+      <div class="screen-buttons-left">
+        <div class="near-screen-button">
+          <label></label>
+        </div>
+        <div class="near-screen-button">
+          <label></label>
+        </div>
+      </div>
+      <div class="screen-container">
+        <ul class="heroes">
+          <li *ngFor="let hero of heroes">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+          </li>
+        </ul>
+      </div>
+      <div class="screen-buttons-right">
+        <div class="near-screen-button">
+          <label></label>
+        </div>
+        <div class="near-screen-button">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

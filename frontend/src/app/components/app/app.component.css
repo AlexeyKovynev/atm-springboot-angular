@@ -1,0 +1,13 @@
+.header {
+  text-align: center;
+  height: 30%;
+}
+
+.container {
+  text-align: center;
+  height: 70%;
+}
+
+nav {
+  display: none;
+}

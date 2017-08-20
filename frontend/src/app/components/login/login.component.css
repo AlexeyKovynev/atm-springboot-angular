@@ -1,0 +1,96 @@
+/*SCREEN*/
+.screen-buttons-left {
+  display: table-cell;
+  height: 400px;
+  width: 15%;
+}
+
+.hidden {
+  display: none;
+}
+
+.screen-buttons-right {
+  height: 400px;
+  display: table-cell;
+  width: 15%;
+}
+
+.screen-and-buttons {
+  display: table;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.screen-container {
+  width: 70%;
+  border-radius: 5px;
+  background: #616161;
+  display: table-cell;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.near-screen-button {
+  text-align: center;
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.near-screen-button:hover {
+  color: whitesmoke;
+  border: dotted 1px;
+}
+
+#card-number-text, #pin-text {
+  background: #616161;
+  text-align: left;
+  padding: 5px;
+  border: none;
+  color: whitesmoke;
+  width: 80%;
+  font-family: Calibri, 'sans-serif';
+}
+
+#card-number-text:focus, #pin-text:focus {
+  border: 1px dotted whitesmoke;
+}
+
+/*KEYPAD*/
+.btn {
+  height: 60px;
+  width: 60px;
+  margin: 10px 4px;
+  background: #8c8c8c !important;
+  border: none !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.clear-button-container {
+  position: relative;
+  width: 0;
+  height: 0
+}
+
+#btn-submit-card, #btn-submit-pin {
+  background: #019c37 !important;
+}
+
+#clear-all {
+  background: #daa600 !important;
+}
+
+#keypad {
+  margin: 0 auto;
+  background-color: #5a5a5a;
+  border-radius: 5px;
+  padding-top: 10px;
+  width: 250px;
+  height: 340px;
+  box-shadow: inset 1px 1px 50px #3e3e3e;
+  text-align: center;
+}

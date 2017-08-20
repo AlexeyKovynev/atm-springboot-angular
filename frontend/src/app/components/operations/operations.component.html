@@ -1,0 +1,44 @@
+<div class="operations-container">
+  
+  <!--SCREEN-->
+  <div class="operations-content">
+    <form (submit)="submit(); $event.preventDefault()">
+      <div class="screen-and-buttons">
+        <div class="screen-buttons-left">
+          <div class="near-screen-button" (click)="activateCard()">
+            <label>Card number</label>
+          </div>
+          <div class="near-screen-button" (click)="activatePin()">
+            <label>PIN</label>
+          </div>
+        </div>
+        <div class="screen-container">
+          <div>
+            <input id="card-number-text"
+                   name="card-number-text"
+                   #cardNumberText readonly
+                   (focus)="activateCard()"/>
+          </div>
+          <div>
+            <input id="pin-text"
+                   name="pin-text"
+                   #pinText readonly type="password"
+                   (focus)="activatePin()"/>
+          </div>
+          <div id="invalid-message">
+            <p id="pin-error-message"></p>
+          </div>
+        </div>
+        <div class="screen-buttons-right">
+          <div class="near-screen-button">
+            <label></label>
+          </div>
+          <div class="near-screen-button">
+            <label></label>
+          </div>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+</div>

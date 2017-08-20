@@ -1,0 +1,69 @@
+<div class="login-container">
+  
+  <!--SCREEN-->
+  <div class="login-content">
+    <form (submit)="submit(); $event.preventDefault()">
+      <div class="screen-and-buttons">
+        <div class="screen-buttons-left">
+          <div class="near-screen-button" (click)="activateCard()">
+            <label>Card number</label>
+          </div>
+          <div class="near-screen-button" (click)="activatePin()">
+            <label>PIN</label>
+          </div>
+        </div>
+        <div class="screen-container">
+          <div>
+            <input id="card-number-text"
+                   name="card-number-text"
+                   #cardNumberText readonly
+                   (focus)="activateCard()"
+                   [(ngModel)]="user.username"/>
+          </div>
+          <div>
+            <input id="pin-text"
+                   name="pin-text"
+                   #pinText readonly type="password"
+                   (focus)="activatePin()"
+                   [(ngModel)]="user.password"/>
+          </div>
+          <div id="invalid-message">
+            <p id="pin-error-message"></p>
+          </div>
+        </div>
+        <div class="screen-buttons-right">
+          <div class="near-screen-button">
+            <label></label>
+          </div>
+          <div class="near-screen-button">
+            <label></label>
+          </div>
+        </div>
+      </div>
+      
+      <!--KEYPAD-->
+      <div id="keypad">
+        <div>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(7)">7</button>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(8)">8</button>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(9)">9</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(4)">4</button>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(5)">5</button>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(6)">6</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(1)">1</button>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(2)">2</button>
+          <button type="button" class="btn btn-info btn-digit" (click)="digitPressed(3)">3</button>
+        </div>
+        <div>
+          <button id="clear-all" class="btn btn-info" (click)="clear()">Clear</button>
+          <button id="0" type="button" class="btn btn-info btn-digit" (click)="digitPressed(0)">0</button>
+          <button id="btn-submit-card" type="submit"  class="btn btn-info">OK</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
